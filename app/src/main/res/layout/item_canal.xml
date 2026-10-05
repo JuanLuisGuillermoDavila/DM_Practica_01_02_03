@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Imagen circular -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgFotoCanal"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Custom.Full" />
+
+    <!-- Título y Último mensaje -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTituloCanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="WhatsApp" />
+
+        <TextView
+            android:id="@+id/tvUltimoMensajeCanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            tools:text="New: Support your teen with options..." />
+    </LinearLayout>
+
+    <!-- Fecha y Cantidad de mensajes sin leer -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFechaCanal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#25D366"
+            android:textSize="12sp"
+            tools:text="30/9/2026" />
+
+        <!-- Insignia circular verde para mensajes sin leer -->
+        <TextView
+            android:id="@+id/tvMensajesSinLeerCanal"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_unread_badge"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="2"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Imagen de perfil redondeada -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgFotoPerfil"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user"
+        tools:ignore="MissingClass" />
+
+    <!-- Información del chat -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Fila superior: Nombre de usuario y Fecha/Hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Nombre de usuario -->
+            <TextView
+                android:id="@+id/tvNombreUsuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/nombre_de_usuario"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <!-- Última fecha de conexión -->
+            <TextView
+                android:id="@+id/tvFechaUltimaConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ultima_fecha_conexion"
+                android:textColor="#667781"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Último mensaje recibido/enviado -->
+        <TextView
+            android:id="@+id/tvUltimoMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/ultimo_mensaje"
+            android:textColor="#667781"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

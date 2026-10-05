@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Practica_01_02_03</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="ultimo_mensaje">Este es el contenido del último mensaje recibido.</string>
+    <string name="ultima_fecha_conexion">10:45 a. m.</string>
+    <string name="nombre_de_usuario">Nombre de Usuario</string>
+    <string name="chats">Chats</string>
+    <string name="novedades">Novedades</string>
+    <string name="comunidades">Comunidades</string>
+    <string name="llamadas">Llamadas</string>
+    <string name="mas_opciones">Más opciones</string>
+    <string name="camara">Cámara</string>
+    <string name="buscar">Preguntar a Meta AI o buscar</string>
+    <string name="nuevo_chat">Nuevo chat</string>
+</resources>

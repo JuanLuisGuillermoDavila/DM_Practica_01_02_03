@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_crear_canal"
+        android:title="Crear canal"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_privacidad_estados"
+        android:title="Privacidad de estados"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_destacado"
+        android:title="Destacado"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_preferencia_anuncios"
+        android:title="Preferencias de anuncios"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ajustes"
+        android:title="Ajustes"
+        app:showAsAction="never" />
+
+</menu>

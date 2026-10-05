@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base de la aplicación -->
+    <style name="Base.Theme.Practica_01_02_03" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Aquí puedes personalizar colores si quieres -->
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Barra de estado transparente -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+
+    <!-- Tema principal que usará la app -->
+    <style name="Theme.Practica_01_02_03" parent="Base.Theme.Practica_01_02_03" />
+
+    <!-- Estilo para hacer las imágenes completamente circulares (50%) -->
+    <style name="ShapeAppearanceOverlay.Custom.Full" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

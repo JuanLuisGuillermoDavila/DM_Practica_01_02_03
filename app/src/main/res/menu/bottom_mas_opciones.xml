@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_nuevo_grupo"
+        android:title="Nuevo Grupo"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/nuevaComunidad"
+        android:title="Nueva comunidad"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listaDifusion"
+        android:title="Lista de difusión"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/dispositivosVinculados"
+        android:title="Privacidad"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/marcarLeidos"
+        android:title="Marcar todos como leídos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ajustes"
+        android:title="Ajustes"
+        app:showAsAction="never" />
+
+</menu>
